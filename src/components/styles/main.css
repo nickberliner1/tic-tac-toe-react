@@ -23,6 +23,10 @@ body {
     transition: 0.2s;
   }
 
+hr {
+  border: none;
+}
+
   /* .app-body {
     font: 1rem / 1.2 sans-serif;
     background-color: black;

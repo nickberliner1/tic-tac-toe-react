@@ -2,7 +2,7 @@ import React from 'react';
 import { Square } from './Square';
 import * as utils from '../utils';
 import { Helmet } from 'react-helmet';
-import { Button, ButtonGroup } from '@material-ui/core';
+import { ButtonGroup } from '@material-ui/core';
 
 export default class Board extends React.Component {
 	constructor(props) {
@@ -66,7 +66,7 @@ export default class Board extends React.Component {
         let status;
 
 		if (winner) {
-            status = `The winner is: ${winner == this.state.playerOneName 
+            status = `The winner is: ${winner === this.state.playerOneName 
                                                 ? this.state.playerOneName 
                                                 : this.state.playerTwoName}!`;
 		} else if ( !winner && isFilled ) {

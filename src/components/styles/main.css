@@ -8,20 +8,53 @@ html {
   *::after {
     box-sizing: inherit;
   }
-  
-  body {
-    font: 1rem / 1.2 sans-serif;
+
+body {
+  font: 1rem / 1.2 sans-serif; 
+}
+
+  .body-light {
     background-color: #f1f1f1;
+    transition: 0.2s;
   }
+
+  .body-dark {
+    background-color: #292929;
+    transition: 0.2s;
+  }
+
+  /* .app-body {
+    font: 1rem / 1.2 sans-serif;
+    background-color: black;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+  } */
   
-  .view {
+  .view-light {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-flow: column;
     padding: 32px;
     margin: 32px auto 0;
     max-width: 520px;
-    background-color: #fff;
+    background-color: white;
     box-shadow: 0 5px 10px hsla(0, 0%, 0%, .2);
-    border-radius: 4px;
+    border-radius: 15px;
+    border: 1px solid rgb(211, 211, 211);
+    transition: 0.2s;
+  }
+
+  .view-dark {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 32px;
+    margin: 32px auto 0;
+    max-width: 520px;
+    background-color: #121212;
+    box-shadow: 0 5px 10px rgba(248, 248, 248, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgb(66, 66, 66);
+    transition: 0.2s;
   }

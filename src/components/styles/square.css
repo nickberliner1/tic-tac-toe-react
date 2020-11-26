@@ -1,12 +1,15 @@
+.square-container {
+    padding: 5px;
+}
+
 .square {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
     width: calc(250px / 3);
     height: calc(250px / 3);
     font-size: 32px;
     color: #111;
     background-color: #fff;
-    border: 5px solid black;
+    border: 0px solid black;
   }

@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 import Board from './components/Board';
-import UndoResetControl from './components/UndoResetControl';
-import useApp from './components/useApp';
 
 import './components/styles/board.css';
 import './components/styles/buttons.css';
@@ -30,8 +28,6 @@ class App extends React.Component {
           state={this.state} 
           nameChangeHandler={this.handlePlayerNameChange} 
         />
-              <UndoResetControl undo={undo} reset={reset} />
-
       </div>
     )
   }

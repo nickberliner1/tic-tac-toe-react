@@ -1,13 +1,32 @@
 .board-wrapper {
-    display: flex;
-      flex-flow: row wrap;
+    /* display: flex; */
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
+ 
+.board-heading-light {
+  transition: 0.2s;
+  color: black;
+  text-align: center;
+}
+
+.board-heading-dark {
+  transition: 0.2s;
+  color: white;
+  text-align: center;
+}
+
+  .board {
+    
+      align-items: flex-end;
+      justify-content: flex-end;
+  }
+
   
-  /* .board {
-      width: 250px;
-  } */
-  
-  /* .board-row {
+  .board-row {
     display: flex;
     flex-flow: row wrap;
-  } */
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
